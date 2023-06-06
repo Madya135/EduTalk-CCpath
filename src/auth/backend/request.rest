@@ -1,0 +1,32 @@
+###
+GET http://localhost:5000/users
+
+### register
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Arsy Madya Budianto",
+    "email": "amb@gmail.com",
+    "password": "32143",
+    "confPassword": "32143"	
+}
+
+### login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "amb@gmail.com",
+    "password": "32143"
+}
+
+### login with access key
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJBcnN5IE1hZHlhIEJ1ZGlhbnRvIiwiZW1haWwiOiJhbWJAZ21haWwuY29tIiwiaWF0IjoxNjg2MDkxNTYyLCJleHAiOjE2ODYwOTE1Nzd9.atHSGUakO46ht04aN-afMS7Xzx1xj_JiQR8OVfD1fso
+
+### updating expired access key
+GET http://localhost:5000/token
+
+### log out and delete access key
+DELETE http://localhost:5000/logout
