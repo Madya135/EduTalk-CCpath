@@ -23,7 +23,7 @@ Content-Type: application/json
 
 ### login with access key
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJBcnN5IE1hZHlhIEJ1ZGlhbnRvIiwiZW1haWwiOiJhbWJAZ21haWwuY29tIiwiaWF0IjoxNjg2MDkxNTYyLCJleHAiOjE2ODYwOTE1Nzd9.atHSGUakO46ht04aN-afMS7Xzx1xj_JiQR8OVfD1fso
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJBcnN5IE1hZHlhIEJ1ZGlhbnRvIiwiZW1haWwiOiJhbWJAZ21haWwuY29tIiwiaWF0IjoxNjg2NzIwMzYzLCJleHAiOjE2ODY3Mjc1NjN9.7MSEJhybRsGyhAN-NaBSrVrXE62gDZftj50KBZYW49E
 
 ### updating expired access key
 GET http://localhost:5000/token

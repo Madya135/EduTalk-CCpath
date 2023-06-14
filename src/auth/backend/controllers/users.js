@@ -6,7 +6,7 @@ export const getUsers = async (req, res) => {
     try {
         const users = await Users.findAll({
             // Digunakan untuk mengatur apa saja yang tampil saat menggunakan Token
-            attributes: ['id', 'name', 'email']
+            // attributes: ['id', 'name', 'email']
         });
         res.json(users);
     } catch (error) {
@@ -51,10 +51,10 @@ export const Login = async (req, res) => {
         const name = user[0].name;
         const email = user[0].email;
         const accessToken = jwt.sign({userId, name, email}, process.env.ACCESS_TOKEN_SECRET,{
-            expiresIn: '1m'
+            expiresIn: '2h'
         });
         const refreshToken = jwt.sign({userId, name, email}, process.env.REFRESH_TOKEN_SECRET,{
-            expiresIn: '1d'
+            expiresIn: '3h'
         });
         await Users.update({refresh_token:refreshToken},{
             where:{

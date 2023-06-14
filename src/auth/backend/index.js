@@ -17,7 +17,7 @@ try {
     console.error(error);
 }
 
-app.unsubscribe(cors({ credentials:true, origin:'http://localhost:3000' }));
+app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
 app.use(cookieParser());
 // Agar dapat menerima data dalam bentuk .json | middleware
 app.use(express.json());
