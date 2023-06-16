@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 const db = new Sequelize(
-    'db-auth',
+    'auth_db',
     'root',
     '',{
         host: 'localhost',
