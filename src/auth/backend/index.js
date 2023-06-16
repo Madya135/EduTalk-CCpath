@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import db from "./config/database.js";
+import db from "./config/Database.js";
 import router from "./routes/index.js";
 // import Users from "./models/usermodels.js"; // Untuk membuat tabel jika belum mebuat
 dotenv.config();
