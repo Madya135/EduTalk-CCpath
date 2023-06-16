@@ -8,8 +8,8 @@ Content-Type: application/json
 {
     "name": "Arsy Madya Budianto",
     "email": "amb@gmail.com",
-    "password": "32143",
-    "confPassword": "32143"	
+    "password": "12345",
+    "confPassword": "12345"	
 }
 
 ### login
@@ -19,13 +19,13 @@ Content-Type: application/json
 {
     // "email": "amb@gmail.com",
     // "password": "32143"
-    "email": "amd@gmail.com",
-    "password": "1234"
+    "email": "amb@gmail.com",
+    "password": "12345"
 }
 
 ### login with access key
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJuYW1lIjoiQW1kIE1pc2MiLCJlbWFpbCI6ImFtZEBnbWFpbC5jb20iLCJpYXQiOjE2ODY3NDM5NzUsImV4cCI6MTY4Njc1ODM3NX0.KqeWhU5EHn8VbOuyhk2L_CdsPmJc8aYno7THhDLMdDw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJNYWhkYSBadWxpYSIsImVtYWlsIjoibXpAZ21haWwuY29tIiwiaWF0IjoxNjg2ODE1NTAyLCJleHAiOjE2ODY4MTU1MTd9.SoQSAWfrgjSEaPRYixryQAi7vyPpllyMZZ8OiSYhPfc
 
 ### updating expired access key
 GET http://localhost:5000/token
