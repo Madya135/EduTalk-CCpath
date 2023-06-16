@@ -1,0 +1,32 @@
+###
+GET http://localhost:5000/users
+
+### register
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Seorang Pengguna",
+    "email": "pengguna@gmail.com",
+    "password": "12345",
+    "confPassword": "12345"	
+}
+
+### login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "pengguna@gmail.com",
+    "password": "12345"
+}
+
+### login with access key
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJTZW9yYW5nIFBlbmdndW5hIiwiZW1haWwiOiJwZW5nZ3VuYUBnbWFpbC5jb20iLCJpYXQiOjE2ODY5MTU5MzksImV4cCI6MTY4NjkzMDMzOX0.iuWUSVg8tSLQixRTBkYM7IbSIIXbdc4g0FNBRpUyhU8
+
+### updating expired access key
+GET http://localhost:5000/token
+
+### log out and delete access key
+DELETE http://localhost:5000/logout
